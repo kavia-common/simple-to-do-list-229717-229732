@@ -32,8 +32,25 @@ html, body, #root {
 body{
   margin: 0;
   color: var(--ink);
+  /* Fallback base color behind the image */
   background: var(--bg-canvas);
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Use the provided screenshot as the app background image.
+   The URL is injected from React (App.js) as a CSS variable so webpack can bundle it. */
+.retroApp{
+  background-image: var(--app-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Keep the existing SVG background component mounted (no behavior changes),
+   but visually hide it so only the image shows. */
+.retroBg{
+  display: none;
 }
 
 /* Screen-reader only helper */

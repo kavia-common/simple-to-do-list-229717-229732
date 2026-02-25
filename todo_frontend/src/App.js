@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import "./App.css";
+import retroBg from "./assets/IMG_20240527_151027.jpg";
 
 const STORAGE_KEY = "retroTodo.tasks.v1";
 
@@ -112,7 +113,7 @@ function App() {
   };
 
   return (
-    <div className="retroApp">
+    <div className="retroApp" style={{ "--app-bg-image": `url(${retroBg})` }}>
       <RetroBackground />
 
       <div className="appShell">
