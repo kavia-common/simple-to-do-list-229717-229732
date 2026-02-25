@@ -40,6 +40,8 @@ body{
 /* Use the provided screenshot as the app background image.
    The URL is injected from React (App.js) as a CSS variable so webpack can bundle it. */
 .retroApp{
+  /* Background image is injected via --app-bg-image from App.js */
+  background-color: var(--bg-canvas);
   background-image: var(--app-bg-image);
   background-size: cover;
   background-position: center;

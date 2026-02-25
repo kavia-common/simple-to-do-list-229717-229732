@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import "./App.css";
-import retroBg from "./assets/IMG_20240527_151027.jpg";
+import retroBg from "./assets/Screenshot_2024-08-16_015356.png";
 
 const STORAGE_KEY = "retroTodo.tasks.v1";
 
